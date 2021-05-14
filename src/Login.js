@@ -23,7 +23,7 @@
              <div className="loginContainer">
              {hasAccount ? (
                          <>
-                            <label>UserName</label>
+                            <label>Angel calvo</label>
                  <input type="text" autoFocus required value={displayname} onChange={(e)=>setDisplayName(e.target.value)}/>
                  <p className="errorMsg">{emailError}</p>
 
