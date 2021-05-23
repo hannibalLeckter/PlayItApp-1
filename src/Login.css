@@ -1,0 +1,6 @@
+.login > img {
+  /*height: 200px;*/
+  height: 200px;
+  content: url("images/logo1.png");
+  text-align: center;
+}

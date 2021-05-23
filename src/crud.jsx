@@ -7,6 +7,7 @@ import { Modal, ModalBody, ModalHeader, ModalFooter } from "reactstrap";
 class Crud extends React.Component {
   state = {
     data: [],
+    key: [],
     modalInsertar: false,
     modalEditar: false,
     form: {
@@ -114,6 +115,7 @@ class Crud extends React.Component {
           <tbody>
             {Object.keys(this.state.data).map((i) => {
               // console.log(i);
+              //key[i].push(Object.keys(this.state.data))
               return (
                 <tr key={i}>
                   <td>{this.state.data[i].cancion}</td>
@@ -145,6 +147,7 @@ class Crud extends React.Component {
                 </tr>
               );
             })}
+
           </tbody>
         </table>
 

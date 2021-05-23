@@ -16,12 +16,13 @@
      return(
          <section className="hero">
              <nav>
-                 <h2>{CurrentUser.displayName}</h2>
-                 <button onClick={handleLogout}>LogOut</button>
+                 <h2>{CurrentUser.displayName}Prueba</h2>
+                 <button>Admin</button>
+                 <button onClick={handleLogout}>Salir</button>
              </nav>
 
              <Music/>
-             <Crud/> 
+             <Crud/>
          </section>
 
          

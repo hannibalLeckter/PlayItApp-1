@@ -12,8 +12,6 @@ import { Grid, Slide, Slider } from "@material-ui/core";
 import { VolumeDown, VolumeMute, VolumeUp } from "@material-ui/icons";
 
 
-
-
 class Music extends React.Component {
 constructor(props) {
 super(props);

@@ -1,4 +1,5 @@
  import React from 'react';
+ import "./Login.css";
 
  const Login = (props) =>{
 
@@ -20,7 +21,9 @@
 
      return(
          <section className="login">
+            <img alt=""></img> 
              <div className="loginContainer">
+            
              {hasAccount ? (
                          <>
                             <label>UserName</label>
