@@ -1,6 +1,6 @@
-.login > img {
+.loginContainer > img {
   /*height: 200px;*/
-  height: 200px;
-  content: url("images/logo1.png");
+  height: 130px;
+  content: url("images/logo2.png");
   text-align: center;
 }

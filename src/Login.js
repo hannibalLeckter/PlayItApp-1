@@ -21,12 +21,11 @@
 
      return(
          <section className="login">
-            <img alt=""></img> 
              <div className="loginContainer">
-            
+                <img alt=""></img> 
              {hasAccount ? (
                          <>
-                            <label>UserName</label>
+                            <label>Usuario</label>
                  <input type="text" autoFocus required value={displayname} onChange={(e)=>setDisplayName(e.target.value)}/>
                  <p className="errorMsg">{emailError}</p>
 
@@ -34,26 +33,26 @@
                  <input type="text" autoFocus required value={email} onChange={(e)=>setEmail(e.target.value)}/>
                  <p className="errorMsg">{emailError}</p>
 
-                 <label>Password</label>
+                 <label>Contraseña</label>
                  <input type="password" required value={password} onChange={(e)=>setPassword(e.target.value)}/>
                  <p className="errorMsg">{passwordError}</p>
                  <div className="btnContainer">
-                            <button onClick={handleRegister}>Sign Up</button>
-                            <p>Already have an account ? <span onClick={()=> setHasAccount(!hasAccount)}>Sign Up</span></p>
+                            <button onClick={handleRegister}>Regístrate</button>
+                            <p>¿Tienes cuenta?<span onClick={()=> setHasAccount(!hasAccount)}>Inicia sesión</span></p>
                             </div>
                          </>
                      ) : ( 
                         <>
-                            <label>Username</label>
+                            <label>Usuario</label>
                  <input type="text" autoFocus required value={email} onChange={(e)=>setEmail(e.target.value)}/>
                  <p className="errorMsg">{emailError}</p>
 
-                 <label>Password</label>
+                 <label>Contraseña</label>
                  <input type="password" required value={password} onChange={(e)=>setPassword(e.target.value)}/>
                  <p className="errorMsg">{passwordError}</p>
                  <div className="btnContainer">
-                            <button onClick={handleLogin}>Sign In</button>
-                            <p>Dont have an account ? <span onClick={()=> setHasAccount(!hasAccount)}>Sign Up</span></p>
+                            <button onClick={handleLogin}>Inicia sesión</button>
+                            <p>¿No tienes cuenta?<span onClick={()=> setHasAccount(!hasAccount)}>Regístrate</span></p>
                             </div>
                          </>
                      )}

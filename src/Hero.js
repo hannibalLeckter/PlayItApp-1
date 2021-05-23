@@ -2,6 +2,7 @@
  import fire from './fire';
  import Music from './Music';
  import Crud from './crud';
+ import {withRouter} from 'react-router-dom'; 
 
  const Hero = (props) =>{
 
@@ -10,19 +11,18 @@
         displayName
     }=props;
 
-
     const CurrentUser = fire.auth().currentUser;
     CurrentUser.updateProfile({displayName:displayName})
+
      return(
          <section className="hero">
              <nav>
-                 <h2>{CurrentUser.displayName}Prueba</h2>
-                 <button>Admin</button>
+                 <h2>{CurrentUser.displayName}</h2>
+                 <button>Admin </button>
                  <button onClick={handleLogout}>Salir</button>
              </nav>
-
-             <Music/>
-             <Crud/>
+            <Crud/>
+            <Music/>
          </section>
 
          
