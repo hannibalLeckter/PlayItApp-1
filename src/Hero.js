@@ -2,6 +2,7 @@
  import fire from './fire';
  import Music from './Music';
  import Crud from './crud';
+ import Side from './Sidebar';
  import {withRouter} from 'react-router-dom'; 
 
  const Hero = (props) =>{
@@ -21,7 +22,8 @@
                  <button>Admin </button>
                  <button onClick={handleLogout}>Salir</button>
              </nav>
-            <Crud/>
+            {/*<Crud/>*/}
+            <Side/>
             <Music/>
          </section>
 
