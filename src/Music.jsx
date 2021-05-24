@@ -12,8 +12,6 @@ import { Grid, Slide, Slider } from "@material-ui/core";
 import { VolumeDown, VolumeMute, VolumeUp } from "@material-ui/icons";
 
 
-
-
 class Music extends React.Component {
 constructor(props) {
 super(props);
@@ -66,6 +64,9 @@ muteMusic() {
         this.setState({ play: !this.state.play });
     }
 }
+addSong(){
+    alert("Canción añadida a la playlist.")
+}
 
 
 render() {
@@ -111,7 +112,7 @@ return (
       <div className="footer__right">
         <Grid container spacing={2}>
           <Grid item>
-            <PlaylistPlayIcon />
+            <PlaylistPlayIcon className="footer__icon" onClick={this.addSong}/>
           </Grid>
           <Grid item>
             <VolumeDownIcon className="footer__icon" onClick={this.downMusic}/>
